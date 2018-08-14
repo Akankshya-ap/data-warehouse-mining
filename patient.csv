@@ -1,0 +1,11 @@
+Patientid,Age,Gender,Tumorsize,HasCancer
+1,44,female,0.3,TRUE
+2,65,male,0.23,FALSE
+3,65,female,0.54,TRUE
+4,38,male,0.43,TRUE
+5,57,male,0.12,FALSE
+6,,male,0.21,FALSE
+7,54,female,0.23,TRUE
+8,34,male,0.54,TRUE
+9,53,female,0.14,TRUE
+10,65,male,0.45,FALSE
