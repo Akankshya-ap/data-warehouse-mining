@@ -36,13 +36,13 @@ def normalize_dataset(dataset, minmax):
 # Load pima-indians-diabetes dataset
 filename = 'D:/115cs0231/dataset.csv'
 dataset = load_csv(filename)
-print('Loaded data file {0} with {1} rows and {2} columns').format(filename, len(dataset), len(dataset[0]))
+print('\nLoaded data file {0} with {1} rows and {2} columns').format(filename, len(dataset), len(dataset[0]))
 # convert string columns to float
 for i in range(len(dataset[0])):
 	str_column_to_float(dataset, i)
-print(dataset[0])
+print "\n\nActual dataset \n",dataset[0]
 # Calculate min and max for each column
 minmax = dataset_minmax(dataset)
 # Normalize columns
 normalize_dataset(dataset, minmax)
-print(dataset[0])
+print "\n\nNormalized dataset\n",dataset[0]

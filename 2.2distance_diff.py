@@ -15,13 +15,13 @@ print x,y
 def euclideandis(x,y):
     return math.sqrt(sum([(a - b) ** 2 for a, b in zip(x, y)]))
     
-print euclideandis(x,y)
+print "\nEuclidean distance" ,euclideandis(x,y)
 
 def manhattan_distance(x,y):
  
     return sum(abs(a-b) for a,b in zip(x,y))
 
-print manhattan_distance(x,y)
+print "\nManhattan distance ",manhattan_distance(x,y)
 
 
 from decimal import Decimal
@@ -35,4 +35,4 @@ def minkowski_distance(x,y,p_value):
  
     return nth_root(sum(pow(abs(a-b),p_value) for a,b in zip(x, y)),p_value)
  
-print minkowski_distance(x,y,5)
+print "\nMinkowski distance ",minkowski_distance(x,y,5)
